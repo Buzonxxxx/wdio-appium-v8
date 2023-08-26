@@ -37,3 +37,4 @@
 
 ### Resource
 - https://www.udemy.com/course/appium-webdriverio-mobile-automation
+- https://github.com/dilpreetj/webdriverio-appium-course/tree/webview
