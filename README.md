@@ -11,6 +11,8 @@
     - `npm i --location=global appium`
 - Install Uiautomator2 driver
     - `appium driver install uiautomator2`
+- Install xcuitest driver
+    - `appium driver install xcuitest`
 - Install Appium-Doctor to check the environment setup (optional) 
     - ```js
         npm install appium-doctor -g
