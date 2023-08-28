@@ -26,7 +26,9 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/ios*.js'
+        // './test/specs/**/ios*.js'
+        // './test/specs/**/android*.js'
+        './test/specs/android/delete-note-screen*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -55,21 +57,22 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [
-    //     {
-    //     'appium:platformName': 'Android',
-    //     'appium:platformVersion': '14.0',
-    //     'appium:deviceName': 'Pixel 4 API 34',
-    //     'appium:automationName': 'UiAutomator2',
-    //     'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk')
-    // }
-
         {
-        platformName: 'ios',
-        'appium:platformVersion': '16.4',
-        'appium:deviceName': 'iPhone 14',
-        'appium:automationName': 'xcuitest',
-        'appium:app': path.join(process.cwd(), 'app/ios/UIKitCatalog.app')
+        'appium:platformName': 'Android',
+        'appium:platformVersion': '14.0',
+        'appium:deviceName': 'Pixel 4 API 34',
+        'appium:automationName': 'UiAutomator2',
+        'appium:app': path.join(process.cwd(), 'app/android/ColorNote-Notepad.apk'),
+        'appium:autoGrantPermissions': true
     }
+
+    //     {
+    //     platformName: 'ios',
+    //     'appium:platformVersion': '16.4',
+    //     'appium:deviceName': 'iPhone 14',
+    //     'appium:automationName': 'xcuitest',
+    //     'appium:app': path.join(process.cwd(), 'app/ios/UIKitCatalog.app')
+    // }
     ],
 
     //
