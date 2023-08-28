@@ -24,6 +24,7 @@
 - OpenJDK v11.0.20.0
 - Android Studio Giraffe | 2022.3.1 Patch 1Android Studio
 - Android Emulator Pixel 4, API 34, OS 14.0 
+- iOS Simulator iPhone 12, iOS 14.5
 - Appium Server v2.1.3
 - UiAutomator2 v2.29.5
 
@@ -31,11 +32,14 @@
 - Clone the repository
 - Install dependencies
     - `npm i`
-- Launch Android Emulator
+- Launch Android Emulator or iOS Simulator
 - Launch Appium Server
     - `appium`
 - Execute test
-    - `npx wdio`
+    - Android
+        - `npx wdio config/wdio.android.shared.conf.js`
+    - iOS
+        - `npx wdio config/wdio.ios.shared.conf.js`
 
 ### Resource
 - https://www.udemy.com/course/appium-webdriverio-mobile-automation
