@@ -37,4 +37,5 @@ class AddNoteScreen {
     }
   }
   
-  module.exports = new AddNoteScreen();
+  // module.exports = new AddNoteScreen();
+  export default new AddNoteScreen
